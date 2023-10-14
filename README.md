@@ -22,7 +22,7 @@
 
 ## Key Features
 
-This is the repo for the paper [A foundation model for generalizable disease detection from retinal images](https://www.nature.com/articles/s41586-023-06555-x), which is based on [MAE](https://github.com/facebookresearch/mae):
+This is the repo for the paper [RETFound: a foundation model for generalizable disease detection from retinal images](https://www.nature.com/articles/s41586-023-06555-x) by [Yukun Zhou](https://rmaphoh.github.io/), [Daniel C. Alexander](https://scholar.google.com/citations?user=mH-ZOQEAAAAJ&hl=zh-CN), and [Pearse A. Keane](https://scholar.google.com/citations?user=-7KS8pYAAAAJ&hl=zh-CN):
 
 - RETFound is pre-trained on 1.6 million retinal images with self-supervised learning
 - RETFound has been validated in multiple disease detection tasks
@@ -142,7 +142,7 @@ This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for detai
 
 ## 🙏 Acknowledgement
 
-The code is based on [MAE](https://github.com/facebookresearch/mae). We thank the authors for sharing the code and all data organisers for releasing their data.
+The code is based on [MAE](https://github.com/facebookresearch/mae). We thank the authors for releasing the code. We also appreciate the data organisers for sharing their data.
 
 ## 📝 Citation
 
