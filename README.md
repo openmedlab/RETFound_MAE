@@ -1,4 +1,4 @@
-# [Model/Data/Code] Project Title 
+# RETFound - A foundation model for retinal imaging
 <!-- select Model and/or Data and/or Code as needed>
 ### Welcome to OpenMEDLab! 👋
 
@@ -14,124 +14,125 @@
 
 <!-- Insert the project banner here -->
 <div align="center">
-    <a href="https://"><img width="1000px" height="auto" src="https://github.com/openmedlab/sampleProject/blob/main/banner_sample.png"></a>
+    <a href="https://"><img width="1000px" height="auto" src="./pic/pipeline.jpg"></a>
 </div>
 
 ---
 
-<!-- Select some of the point info, feel free to delete -->
-[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fopendilab)](https://twitter.com/opendilab)
-[![PyPI](https://img.shields.io/pypi/v/DI-engine)](https://pypi.org/project/DI-engine/)
-![Conda](https://anaconda.org/opendilab/di-engine/badges/version.svg)
-![Conda update](https://anaconda.org/opendilab/di-engine/badges/latest_release_date.svg)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/DI-engine)
-![PyTorch Version](https://img.shields.io/badge/dynamic/json?color=blue&label=pytorch&query=%24.pytorchVersion&url=https%3A%2F%2Fgist.githubusercontent.com/PaParaZz1/54c5c44eeb94734e276b2ed5770eba8d/raw/85b94a54933a9369f8843cc2cea3546152a75661/badges.json)
-
-
-![Loc](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/HansBug/3690cccd811e4c5f771075c2f785c7bb/raw/loc.json)
-![Comments](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/HansBug/3690cccd811e4c5f771075c2f785c7bb/raw/comments.json)
-
-![Style](https://github.com/opendilab/DI-engine/actions/workflows/style.yml/badge.svg)
-![Docs](https://github.com/opendilab/DI-engine/actions/workflows/doc.yml/badge.svg)
-![Unittest](https://github.com/opendilab/DI-engine/actions/workflows/unit_test.yml/badge.svg)
-![Algotest](https://github.com/opendilab/DI-engine/actions/workflows/algo_test.yml/badge.svg)
-![deploy](https://github.com/opendilab/DI-engine/actions/workflows/deploy.yml/badge.svg)
-[![codecov](https://codecov.io/gh/opendilab/DI-engine/branch/main/graph/badge.svg?token=B0Q15JI301)](https://codecov.io/gh/opendilab/DI-engine)
-
-![GitHub Org's stars](https://img.shields.io/github/stars/opendilab)
-[![GitHub stars](https://img.shields.io/github/stars/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/network)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/opendilab/DI-engine)
-[![GitHub issues](https://img.shields.io/github/issues/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/issues)
-[![GitHub pulls](https://img.shields.io/github/issues-pr/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/pulls)
-[![Contributors](https://img.shields.io/github/contributors/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/graphs/contributors)
-[![GitHub license](https://img.shields.io/github/license/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/blob/master/LICENSE)
-
-Updated on 2023.05.25
-
-
 
 ## Key Features
 
-This repository provides the official implementation of ...
+This is the official repo for [RETFound](https://www.nature.com/articles/s41586-023-06555-x), which is based on [MAE](https://github.com/facebookresearch/mae):
 
-key feature bulletin points here
-- 1
-- 2
-- 3
+- RETFound is pre-trained on 1.6 million retinal images with self-supervised learning
+- RETFound has been validated in multiple disease detection tasks
+- RETFound can be efficiently adapted to customised tasks
 
 ## Links
 
-- [Paper](https://)
-- [Model](https://)
-- [Code](https://) 
+- [Paper](https://www.nature.com/articles/s41586-023-06555-x)
+- [Model](https://github.com/rmaphoh/RETFound_MAE#fine-tuning-with-retfound-weights:~:text=Download%20the%20RETFound%20pre%2Dtrained%20weights)
+- [Code](https://github.com/rmaphoh/RETFound_MAE#fine-tuning-with-retfound-weights) 
 <!-- [Code] may link to your project at your institute>
 
 
 <!-- give a introduction of your project -->
 ## Details
 
-intro text here.
-
-<!-- Insert a pipeline of your algorithm here if got one -->
-<div align="center">
-    <a href="https://"><img width="1000px" height="auto" src="https://github.com/openmedlab/sampleProject/blob/main/diagram_sample.png"></a>
-</div>
-
-More intro text here.
+Medical artificial intelligence (AI) offers great potential for recognizing signs of health conditions in retinal images and expediting the diagnosis of eye diseases and systemic disorders1. However, the development of AI models requires substantial annotation and models are usually task-specific with limited generalizability to different clinical applications2. Here, we present RETFound, a foundation model for retinal images that learns generalizable representations from unlabelled retinal images and provides a basis for label-efficient model adaptation in several applications. Specifically, RETFound is trained on 1.6 million unlabelled retinal images by means of self-supervised learning and then adapted to disease detection tasks with explicit labels. We show that adapted RETFound consistently outperforms several comparison models in the diagnosis and prognosis of sight-threatening eye diseases, as well as incident prediction of complex systemic disorders such as heart failure and myocardial infarction with fewer labelled data. RETFound provides a generalizable solution to improve model performance and alleviate the annotation workload of experts to enable broad clinical AI applications from retinal imaging.
 
 
 ## Dataset Links
 
-- [Liver Tumor Segmentation Challenge (LiTS)](https://competitions.codalab.org/competitions/17094#learn_the_details)
-- [Kidney and Kidney Tumor Segmentation (KiTS)](https://kits21.kits-challenge.org/participate#download-block)
+- [IDRID](https://ieee-dataport.org/open-access/indian-diabetic-retinopathy-image-dataset-idrid)
+- [MESSIDOR-2](https://www.adcis.net/en/third-party/messidor2/)
+- [APTOS-2019](https://www.kaggle.com/competitions/aptos2019-blindness-detection/data)
+- [PAPILA](https://figshare.com/articles/dataset/PAPILA/14798004/1)
+- [Glaucoma Fundus](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/1YRRAC)
+- [JSIEC](https://zenodo.org/record/3477553)
+- [Retina](https://www.kaggle.com/datasets/jr2ngb/cataractdataset)
+- [OCTID](https://borealisdata.ca/dataverse/OCTID)
+- [UK Biobank](https://www.ukbiobank.ac.uk/)
+
 
 ## Get Started
 
-**Main Requirements**  
-> connected-components-3d  
-> h5py==3.6.0  
-> monai==0.9.0  
-> torch==1.11.0  
+**Main Requirements**     
+> torch==1.8.1  
+> pandas==0.25.3
+> timm==0.3.2  
 > tqdm  
-> fastremap  
 
 **Installation**
 ```bash
-pip install DDD
+conda create -n retfound python=3.7.5 -y
+conda activate retfound
+
+cd RETFound_MAE
+pip install -r requirement.txt
 ```
 
 **Download Model**
 
+<table><tbody>
+<!-- START TABLE -->
+<!-- TABLE HEADER -->
+<th valign="bottom"></th>
+<th valign="bottom">ViT-Large</th>
+<!-- TABLE BODY -->
+<tr><td align="left">Colour fundus image</td>
+<td align="center"><a href="https://drive.google.com/file/d/1l62zbWUFTlp214SvK6eMwPQZAzcwoeBE/view?usp=sharing">download</a></td>
+</tr>
+<!-- TABLE BODY -->
+<tr><td align="left">OCT</td>
+<td align="center"><a href="https://drive.google.com/file/d/1m6s7QYkjyjJDlpEuXm7Xp3PmjN-elfW2/view?usp=sharing">download</a></td>
+</tr>
+</tbody></table>
 
-**Preprocess**
-```bash
-python DDD
-```
+
+**Data Preparation**
+Organise your data into this directory structure (using IDRiD as an [example](Example.ipynb))
+
+<p align="left">
+  <img src="./pic/file_index.jpg" width="160">
+</p>
 
 
 **Training**
 ```bash
-python DDD
+python -m torch.distributed.launch --nproc_per_node=1 --master_port=48798 main_finetune.py \
+    --batch_size 16 \
+    --world_size 1 \
+    --model vit_large_patch16 \
+    --epochs 50 \
+    --blr 5e-3 --layer_decay 0.65 \
+    --weight_decay 0.05 --drop_path 0.2 \
+    --nb_classes 5 \
+    --data_path ./IDRiD_data/ \
+    --task ./finetune_IDRiD/ \
+    --finetune ./RETFound_cfp_weights.pth
 ```
 
-
-**Validation**
-```bash
-python DDD
-```
 
 
 **Testing**
 ```bash
-python DDD
+python -m torch.distributed.launch --nproc_per_node=1 --master_port=48798 main_finetune.py \
+    --eval --batch_size 16 \
+    --world_size 1 \
+    --model vit_large_patch16 \
+    --epochs 50 \
+    --blr 5e-3 --layer_decay 0.65 \
+    --weight_decay 0.05 --drop_path 0.2 \
+    --nb_classes 5 \
+    --data_path ./IDRiD_data/ \
+    --task ./internal_IDRiD/ \
+    --resume ./finetune_IDRiD/checkpoint-best.pth
 ```
 
 ## 🙋‍♀️ Feedback and Contact
 
-- Email
-- Webpage 
-- Social media
+Please contact 	**ykzhoua@gmail.com** or **yukun.zhou.19@ucl.ac.uk** if you have questions.
 
 
 ## 🛡️ License
@@ -140,17 +141,19 @@ This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for detai
 
 ## 🙏 Acknowledgement
 
-A lot of code is modified from [monai](https://github.com/Project-MONAI/MONAI).
+The code is based on [MAE](https://github.com/facebookresearch/mae). We thank the authors for sharing the code.
 
 ## 📝 Citation
 
 If you find this repository useful, please consider citing this paper:
 ```
-@article{John2023,
-  title={paper},
-  author={John},
-  journal={arXiv preprint arXiv:},
-  year={2023}
+@article{zhou2023foundation,
+  title={A foundation model for generalizable disease detection from retinal images},
+  author={Zhou, Yukun and Chia, Mark A and Wagner, Siegfried K and Ayhan, Murat S and Williamson, Dominic J and Struyven, Robbert R and Liu, Timing and Xu, Moucheng and Lozano, Mateo G and Woodward-Court, Peter and others},
+  journal={Nature},
+  pages={1--8},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
 }
 ```
 
