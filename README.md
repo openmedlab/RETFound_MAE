@@ -22,7 +22,7 @@
 
 ## Key Features
 
-This is the official repo for [RETFound](https://www.nature.com/articles/s41586-023-06555-x), which is based on [MAE](https://github.com/facebookresearch/mae):
+This is the repo for the paper [A foundation model for generalizable disease detection from retinal images](https://www.nature.com/articles/s41586-023-06555-x), which is based on [MAE](https://github.com/facebookresearch/mae):
 
 - RETFound is pre-trained on 1.6 million retinal images with self-supervised learning
 - RETFound has been validated in multiple disease detection tasks
@@ -31,7 +31,7 @@ This is the official repo for [RETFound](https://www.nature.com/articles/s41586-
 ## Links
 
 - [Paper](https://www.nature.com/articles/s41586-023-06555-x)
-- [Model](https://github.com/rmaphoh/RETFound_MAE#fine-tuning-with-retfound-weights:~:text=Download%20the%20RETFound%20pre%2Dtrained%20weights)
+- [Model](https://github.com/openmedlab/RETFound_MAE#:~:text=r%20requirement.txt-,Download%20Model,-ViT%2DLarge)
 - [Code](https://github.com/rmaphoh/RETFound_MAE#fine-tuning-with-retfound-weights) 
 <!-- [Code] may link to your project at your institute>
 
@@ -39,7 +39,7 @@ This is the official repo for [RETFound](https://www.nature.com/articles/s41586-
 <!-- give a introduction of your project -->
 ## Details
 
-Medical artificial intelligence (AI) offers great potential for recognizing signs of health conditions in retinal images and expediting the diagnosis of eye diseases and systemic disorders1. However, the development of AI models requires substantial annotation and models are usually task-specific with limited generalizability to different clinical applications2. Here, we present RETFound, a foundation model for retinal images that learns generalizable representations from unlabelled retinal images and provides a basis for label-efficient model adaptation in several applications. Specifically, RETFound is trained on 1.6 million unlabelled retinal images by means of self-supervised learning and then adapted to disease detection tasks with explicit labels. We show that adapted RETFound consistently outperforms several comparison models in the diagnosis and prognosis of sight-threatening eye diseases, as well as incident prediction of complex systemic disorders such as heart failure and myocardial infarction with fewer labelled data. RETFound provides a generalizable solution to improve model performance and alleviate the annotation workload of experts to enable broad clinical AI applications from retinal imaging.
+Medical artificial intelligence (AI) offers great potential for recognizing signs of health conditions in retinal images and expediting the diagnosis of eye diseases and systemic disorders. However, the development of AI models requires substantial annotation and models are usually task-specific with limited generalizability to different clinical applications. Here, we present RETFound, a foundation model for retinal images that learns generalizable representations from unlabelled retinal images and provides a basis for label-efficient model adaptation in several applications. Specifically, RETFound is trained on 1.6 million unlabelled retinal images by means of self-supervised learning and then adapted to disease detection tasks with explicit labels. We show that adapted RETFound consistently outperforms several comparison models in the diagnosis and prognosis of sight-threatening eye diseases, as well as incident prediction of complex systemic disorders such as heart failure and myocardial infarction with fewer labelled data. RETFound provides a generalizable solution to improve model performance and alleviate the annotation workload of experts to enable broad clinical AI applications from retinal imaging.
 
 
 ## Dataset Links
@@ -59,7 +59,7 @@ Medical artificial intelligence (AI) offers great potential for recognizing sign
 
 **Main Requirements**     
 > torch==1.8.1  
-> pandas==0.25.3
+> pandas==0.25.3  
 > timm==0.3.2  
 > tqdm  
 
@@ -91,6 +91,7 @@ pip install -r requirement.txt
 
 
 **Data Preparation**
+
 Organise your data into this directory structure (using IDRiD as an [example](Example.ipynb))
 
 <p align="left">
@@ -141,7 +142,7 @@ This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for detai
 
 ## 🙏 Acknowledgement
 
-The code is based on [MAE](https://github.com/facebookresearch/mae). We thank the authors for sharing the code.
+The code is based on [MAE](https://github.com/facebookresearch/mae). We thank the authors for sharing the code and all data organisers for releasing their data.
 
 ## 📝 Citation
 
